@@ -18,6 +18,7 @@ defmodule WeatherTracker.WeatherConditions.WeatherCondition do
     field :pressure_pa, :decimal
     field :temperature_c, :decimal
     field :light_lumens, :decimal
+    field :temperature_f, :decimal
   end
 
   def create_changeset(weather_condition = %__MODULE__{}, attrs) do
