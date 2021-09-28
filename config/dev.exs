@@ -2,10 +2,11 @@ use Mix.Config
 
 # Configure your database
 config :weather_tracker, WeatherTracker.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "weather_tracker_dev",
-  hostname: "localhost",
+  username: "tsdbadmin",
+  password: "hdz#AN6cJ33-1I",
+  database: "tsdb",
+  hostname: "sqxgvc8wc7.jn3m3oigwr.tsdb.cloud.timescale.com",
+  port: "34913",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 

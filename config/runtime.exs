@@ -28,9 +28,12 @@ if config_env() == :prod do
       For example: ecto://USER:PASS@HOST/DATABASE
       """
 
+  # This is a dummy DB so it does not matter at the moment
   config :weather_tracker, WeatherTracker.Repo,
-    url: database_url,
-    # IMPORTANT: Or it won't find the DB server
-    socket_options: [:inet6],
+    username: "tsdbadmin",
+    password: "hdz#AN6cJ33-1I",
+    database: "tsdb",
+    hostname: "sqxgvc8wc7.jn3m3oigwr.tsdb.cloud.timescale.com",
+    port: "34913",
     pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10")
 end
